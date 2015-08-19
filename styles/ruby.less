@@ -2,110 +2,110 @@
 
   .meta.embedded {
     .punctuation.section {
-      color: @red;
+      color: @green;
     }
   }
   .punctuation.definition {
-    color: @syntax-text-color;
+    color: @yellow_string;
     &.string {
-      color: @red;
+      color: @yellow_string_punctuation;
     }
   }
   .punctuation.definition.comment {
-    color: @syntax-comment-color;
+    color: @comment_v;
   }
   .entity.inherited-class {
     color: @yellow;
   }
   .variable {
     &.parameter {
-      color: @syntax-text-color;
+      color: @blue_code;
     }
   }
   .variable.constant {
-    color: @yellow;
+    color: @blue_code;
   }
   .instance {
     .punctuation.definition {
-      color: @blue;
+      color: @blue_code;
     }
   }
   .class {
-    color: @yellow;
+    color: @blue_code;
     &.control {
-      color: @syntax-text-color;
+      color: @blue_code;
     }
   }
   .module {
-    color: @yellow;
+    color: @yellow_string;
   }
   .require {
     .keyword.other.special-method {
-      color: @orange;
+      color: @blue_class;
     }
   }
   .keyword.other.special-method {
-    color: @orange;
+    color: @function;
   }
   .keyword.other {
-    color: @green;
+    color: @red;
   }
   .keyword.control {
-    color: @green;
+    color: @flow;
   }
   .special-method {
-    color: @blue;
+    color: @function;
   }
   .symbol {
-    color: @cyan;
+    color: @symbol;
     .punctuation.definition {
-      color: @cyan;
+      color: @symbol;
     }
   }
   .hashkey {
-    color: @red;
+    color: @purple_hashkey;
     .punctuation.definition {
-      color: @red;
+      color: @purple_hashkey_punctuation;
     }
   }
   .string.regexp {
-    color: @red;
+    color: @yellow_string_punctuation;
   }
   .todo {
     color: @magenta;
   }
   .variable.ruby.global {
-    color: @blue;
+    color: @red;
     .punctuation {
-      color: @blue;
+      color: @red;
     }
   }
   .variable.block {
-    color: @blue;
+    color: @red;
   }
   .punctuation.separator {
-    color: @syntax-text-color;
+    color: @green;
   }
   .string.interpolated {
     .embedded.line.ruby {
       .punctuation {
         .source.ruby {
-          color: @red;
+          color: @magenta;
         }
       }
       .source.ruby {
         .punctuation.array,
         .punctuation.function {
-          color: @syntax-text-color;
+          color: @blue_code;
         }
-        color: @syntax-text-color;
+        color: @blue_code;
       }
     }
   }
   .support.function {
-    color: @syntax-text-color;
+    color: @blue_code;
   }
   .support.function.kernel {
-    color: @green;
+    color: @blue_code;
   }
 }

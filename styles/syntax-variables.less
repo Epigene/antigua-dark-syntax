@@ -9,16 +9,16 @@
 @syntax-emphasized-color: @base1;
 @syntax-cursor-color: @base3;
 @syntax-selection-color: lighten(@base02, 4%);
-@syntax-selection-flash-color: @base1;
+@syntax-selection-flash-color: @red;
 @syntax-background-color: @base03;
 
 // Guide colors
 @syntax-wrap-guide-color: @base02;
-@syntax-indent-guide-color: fadeout(@base00, 80%);
-@syntax-invisible-character-color: fadeout(@base00, 80%);
+@syntax-indent-guide-color: fadeout(@base00, 82%);
+@syntax-invisible-character-color: fadeout(@base00, 82%);
 
 // For find and replace markers
-@syntax-result-marker-color: @cyan;
+@syntax-result-marker-color: @red;
 @syntax-result-marker-color-selected: @base3;
 
 // Gutter colors
@@ -34,15 +34,27 @@
 @syntax-color-removed: @red;
 
 // For language entity colors
-@syntax-color-variable: @cyan;
+@syntax-color-variable: @blue_code;
 @syntax-color-constant: @yellow;
-@syntax-color-property: @green;
-@syntax-color-value: @cyan;
-@syntax-color-function: @blue;
-@syntax-color-method: @blue;
+@syntax-color-property: @blue_code;
+@syntax-color-value: @blue_code;
+@syntax-color-function: @blue_code;
+@syntax-color-method: @blue_code;
 @syntax-color-class: @red;
-@syntax-color-keyword: @green;
+@syntax-color-keyword: @red;
 @syntax-color-tag: @blue;
 @syntax-color-attribute: @syntax-comment-color;
 @syntax-color-import: @red;
 @syntax-color-snippet: @syntax-color-keyword;
+
+// Ruby
+@blue_code: #1096fa;
+@function: #9de4ff;
+@symbol: #3886D9;
+@blue_class: #1096fa;
+@yellow_string_punctuation: #FFFF00;
+@yellow_string: #FFFF54;
+@purple_hashkey: #8861FF;
+@purple_hashkey_punctuation: #7142FF;
+@comment_v: @syntax-comment-color;
+@flow: #E6A800;
