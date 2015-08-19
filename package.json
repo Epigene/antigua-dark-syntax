@@ -1,0 +1,11 @@
+{
+  "name": "antigua-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "A dark syntax theme using a mongrel variant of solarized colors",
+  "repository": "https://github.com/",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
