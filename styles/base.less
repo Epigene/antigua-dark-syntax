@@ -1,4 +1,4 @@
-@import "variables";
+@import "syntax-variables";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -69,7 +69,8 @@ atom-text-editor, :host {
     color: @red;
   }
   &.attribute-name {
-    color: @syntax-comment-color;
+    //color: @syntax-comment-color;
+    color: @magenta;
   }
 }
 
@@ -98,8 +99,12 @@ atom-text-editor, :host {
 .constant {
   color: @yellow;
 
-  &.numeric,
-  &.boolean,
+  &.numeric, {
+    color: @variable_purple;
+  }
+  &.boolean, {
+    color: @boolean_salad;
+  }
   &.symbol, &.symbol .punctuation {
     color: @cyan;
   }
@@ -143,7 +148,7 @@ atom-text-editor, :host {
 }
 
 .parameter {
-  color: @red;
+  color: @magenta;
 }
 
 .property-name {
@@ -157,19 +162,19 @@ atom-text-editor, :host {
 }
 
 .string {
-  color: @cyan;
+  color: @yellow_string;
 
   .constant.character.escape {
-    color: @red;
-    font-weight: bold;
+    color: @yellow_string;
+    //font-weight: bold;
   }
 
   .punctuation.string {
-    color: @cyan;
+    color: @yellow_string;
   }
 
   &.regexp {
-    color: @cyan;
+    color: @yellow_string;
 
     .string.regexp.arbitrary-repetition {
       color: @cyan;
@@ -178,7 +183,7 @@ atom-text-editor, :host {
 }
 
 .variable {
-  color: @cyan;
+  color: @blue_code;
 
   &.instance {
     color: @blue;
