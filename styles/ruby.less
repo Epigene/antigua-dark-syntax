@@ -1,10 +1,39 @@
 .source.ruby {
+  color: @blue_code;
 
   .meta.embedded {
     .punctuation.section {
       color: @green;
     }
   }
+
+  .meta.function.method {
+    color: @function;
+  }
+
+  .keyword.operator {
+    color: @logic;
+  }
+
+  .keyword.operator.assignment {
+    color: @logic;
+  }
+
+  .punctuation.section {
+    color: @grey_delimiters;
+    font-weight: bold;
+  }
+
+  .variable.parameter.function {
+    color: @argument;
+    font-style: italic;
+  }
+
+  .punctuation.definition.parameters {
+    color: @grey_delimiters;
+    font-weight: bold;
+  }
+
   .punctuation.definition {
     color: @yellow_string;
     &.string {
@@ -15,7 +44,7 @@
     color: @comment_v;
   }
   .entity.inherited-class {
-    color: @yellow;
+    color: @blue_class;
   }
   .variable {
     &.parameter {
@@ -31,31 +60,21 @@
     }
   }
   .class {
-    color: @blue_code;
+    color: @blue_class;
     &.control {
-      color: @blue_code;
+      color: @blue_class;
     }
   }
   .module {
     color: @blue_class;
     font-weight: bold;
   }
-  .require {
-    .keyword.other.special-method {
-      color: @blue_class;
-    }
-  }
-  .keyword.other.special-method {
-    color: @includes;
-  }
+
   .keyword.other {
     color: @includes;
   }
   .keyword.control {
     color: @flow;
-  }
-  .special-method {
-    color: @includes;
   }
   .symbol {
     color: @symbol;
@@ -95,18 +114,20 @@
         }
       }
       .source.ruby {
-        .punctuation.array,
-        .punctuation.function {
-          color: @blue_code;
-        }
+        background-color: lighten(@base03, 3%);
         color: @blue_code;
+        .punctuation.section {
+          color: @grey_delimiters;
+        }
       }
     }
   }
   .support.function {
     color: @blue_code;
   }
-  .support.function.kernel {
-    color: @blue_code;
+  .support.function.actionpack {
+    color: @function;
+    font-style: italic;
   }
+
 }
