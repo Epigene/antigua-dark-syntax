@@ -53,6 +53,10 @@
   .entity.function {
     color: @function;
   }
+  .variable.other.readwrite {
+    color: @blue_code;
+  }
+
   .variable {
     &.parameter {
       color: @blue_code;
@@ -60,11 +64,6 @@
   }
   .variable.constant {
     color: @constant_orange;
-  }
-  .instance {
-    .punctuation.definition {
-      color: @blue_code;
-    }
   }
   .class {
     color: @constant_orange;
@@ -112,6 +111,9 @@
   }
   .punctuation.separator {
     color: @green;
+  }
+  .punctuation.definition.variable {
+    color: @blue_code;
   }
   .string.interpolated {
     .embedded.line.ruby {
